@@ -9,6 +9,7 @@ import { ErrorBoundary } from '@/components/error-boundary';
 import { WobbleCard } from "@/components/ui/wobble-card";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import { seo_services, SeoService } from "@/lib/seo-services";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -23,31 +24,6 @@ const staggerContainer = {
     }
   }
 };
-
-interface SeoService {
-  title: string;
-  points: string[];
-}
-
-export const seo_services: SeoService[] = [
-  {
-    title: "Technical SEO",
-    points: ["Website Audit & Analysis", "Site Speed Optimization", "Mobile Optimization", "Indexability & Crawlability", "Structured Data Markup"],
-  },
-  {
-    title: "On-Page SEO",
-    points: ["Keyword Research & Strategy", "Content Optimization", "Meta Description & Title Tag Optimization", "Header Tag Implementation", "Image Optimization"],
-  },
-  {
-    title: "Off-Page SEO",
-    points: ["Backlink Building & Outreach", "Local SEO (Google My Business Optimization)", "Online Reputation Management", "Social Signal Building", "Content Promotion"],
-
-  },
-  {
-    title: "Content Marketing for SEO",
-    points: ["Blog Post Creation", "Landing Page Content", "Pillar Page & Topic Cluster Development", "Content Audits & Strategy", "On-going Content Optimization"],
-  },
-];
 
 // const caseStudies = [
 //   {

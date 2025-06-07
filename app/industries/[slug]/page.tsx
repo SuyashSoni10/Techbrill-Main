@@ -6,6 +6,10 @@ import CTASection from "@/components/cta-section"
 import Footer from "@/components/footer"
 import Link from "next/link"
 
+interface IndustryPageProps {
+  params: { slug: string };
+}
+
 interface Industry {
   title: string
   slug: string
@@ -49,9 +53,7 @@ const industries: Industry[] = [
 
 export default async function IndustryPage({
   params,
-}: {
-  params: { slug: string }
-}) {
+}: IndustryPageProps) {
   const industry = industries.find((i) => i.slug === params.slug)
 
   if (!industry) {
