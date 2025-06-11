@@ -18,7 +18,7 @@ export default function Hero() {
             <div className="relative z-20">
               <AnimatedText
                 text="Innovative IT Solutions for Your Business Growth"
-                className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.2] tracking-tight mb-8 text-center lg:text-left font-montserrat"
+                className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.2] tracking-tight mb-8 text-center lg:text-left font-montserrat text-gray-800 dark:text-gray-300"
                 delay={0.2}
               />
               <AnimatedSection delay={0.4} animation="fade">
